@@ -1,0 +1,58 @@
+29 Sept 2023
+To become a good developer you MUST know WHAT and WHEN to copy-paste code and from WHERE to copy-paste from.
+Some basic structure of website must be copy-pasted from other sources; like - tables, forms basic structure and then you can modify them. Waha apna dimag lagana jaha innovation ka kaam hai.
+Use chat-GPT, Stackoverflow, cheatsheet or any other website to copy-paste code but apna dimag lagana aur usse properly modify karna.
+
+The title of the webpage is used by search engines. Make sure you use correct titles for your webpage so that it is more optimised (SEO).
+
+===========================================
++++++++++++++++++++++++++++++++++++++++++++
+===========================================
+
+30 Sept 2023
+when u are working on industry level websites, it is advised to NOT use inline styles because maintainability and reusability decreases.
+
+===========================================
++++++++++++++++++++++++++++++++++++++++++++
+===========================================
+
+1 Oct 2023
+Win + Shift + S = snipping tool shortcut
+
+<img> tag attributes : 
+- width="<just mention the number>",        // u must give atleast one of them - width or height. Otherwise when page loads, the img will cover the entire page.
+- height="<just mention the number>",       // in case u don't know how much width to set, just set the height. 
+- alt="<alternate text in case img doesn't load>"
+- src="<the link/path of the img file>" 
+
+<table> tag aur uske subordinates - 
+<tr> tag ka kaam hai row banana.
+<th> tag ka kaam hai heading dena           // inhe 1st row mein use karo mastt. 
+<td> tag ka kaam hai data store karna jo display kiya jayega table k cells mein.
+
+ab, 2 attributes hai - colspan, rowspan. Inhe hum <th>, <td> tags mein use kar sakte hai.
+colspan = "<value>"     // kitne columns ka jagah lega.
+rowspan = "<value>"     // kitne rows ka jagah lega.
+
+we can add captions for our tables. it's easy. Just use the <caption> your content here </caption> inside <table> tag.
+There are some semantic tags -
+<thead></thead>         // generally, iske andar humare <th> wala content aata hai.
+<tbody></tbody>         // humara data 
+<tfoot></tfoot>         // aur last ka kuch calculation type agar chahiye raha to
+The above mentioned tags don't change the table in anyway. It just helps us in grouping our content better.
+
+
+Lists
+- unordered Lists       // <ul> <li> </li> </ul>    we can change the bullet point design using "type" attribute.
+<ul type= "square"> </ul>
+
+- ordered Lists         // <ol> <li> </li> </ol>    we can change the numbering as well using "type" attribute.
+<ol type="a">  </ol>    OR      <ol type="I"> </ol>
+- definition Lists      // used very less. Just refer to cheatsheet or google for how to use this.
+
+
+
+
+
+
+
