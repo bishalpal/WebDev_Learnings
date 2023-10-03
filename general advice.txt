@@ -20,7 +20,7 @@ when u are working on industry level websites, it is advised to NOT use inline s
 Win + Shift + S = snipping tool shortcut
 
 <img> tag attributes : 
-- width="<just mention the number>",        // u must give atleast one of them - width or height. Otherwise when page loads, the img will cover the entire page.
+- width="<just mention the number>",        // u MUST give atleast one of them - width or height. Otherwise when page loads, the img will cover the entire page. THIS HELPS IN OTHER WAYS AS WELL! so keep in mind.
 - height="<just mention the number>",       // in case u don't know how much width to set, just set the height. 
 - alt="<alternate text in case img doesn't load>"
 - src="<the link/path of the img file>" 
@@ -50,9 +50,83 @@ Lists
 <ol type="a">  </ol>    OR      <ol type="I"> </ol>
 - definition Lists      // used very less. Just refer to cheatsheet or google for how to use this.
 
+===========================================
++++++++++++++++++++++++++++++++++++++++++++
+===========================================
+
+3 October 2023
+
+Core web vitals - Google considers this to rank pages.
+Suppose you are competing with other websites who are displaying the same content as yours, then your Core Web Vitals are checked by the search engines to rank.
+There are 3 aspects -
+1. CLS ( Cumulative Layout Shift ) - while the page loads content, how much does the content gets shift? 
+A very good precaution will be to set width and height of images. It will definitely minimise the layout shift while the page is being loaded. 
+2. LCP ( Largest Contentful Paint ) - if a page is visited, then how much time is being taken to load the largest content/ element of the website? Google considers 2.5 seconds (max) to be good. 
+3. FID ( First Input Delay ) - if a user presses on any <input> element, then in how much time is that input being processed? Google considers that within 100 milliseconds, processing should start upon interaction. 
+
+You can checkout more about the above details at web.dev 
+
+SEO - Search Engine Optimization - used by search engines like Google to display info about a website. The better the website has been coded, the more likely it is going to show up in the search results.
 
 
+Lighthouse - 
+The browser has a tab "Lighthouse" in the developer tools.
+We can get the values of the 3 core web vitals from here. Lighthouse generates a report which tells what can be improved in the website. It is a really cool tool!
 
 
+Now, some good SEO practices -
+1. The text within your <title> </title> tag must somehow be related to the content of your website. Whenever the page changes, make sure the content of the <title> tag reflects something about the new content.
+
+2. Use <meta name="description" content = "--your content--">. This tag will contain the description that you would want to show up in google search results of your website. Well, search engine may display description from the content of your website in case you don't provide the mentioned tag. It depends on the search engine, it may have some other criteria.
+
+===========================================
++++++++++++++++++++++++++++++++++++++++++++
+===========================================
+
+3 October 2023
+
+Forms - Super important stuff. Used in lot of places!
+
+attribute - action = "<the url>" 
+          - method = "get/post"
+There are many <input> tags that we can use within forms. Some of the common attributes are -
+1. type = "text/submit/..."     this attribute helps us to tell browser what type of input element we want.
+2. name = "<give a name>"       
+3. placeholder = "<enter a placeholder text u want to see in the empty input elements>"
+
+Oh haa, we can use a <label></label> tag for a particular input tag. 
+To keep track of which which <label> tag is for which <input> tag, it has an attribute - 
+for = "<the id_value of input tag>"
+
+eg - 
+<label for="username">Username : </label>
+<input type="text" name="username" id="username" placeholder="Enter Username">
+
+We should use our particular label-input tags within <div></div>. we will get line breaks too. 
+Yes, there is <br> tag, but prefer to use the <div></div> 
+
+
+Radio buttons - best in cases when we want the user to select only 1 option.
+<input type="radio" id="male" name="gender" value="male"> 
+<label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label>
+
+Now, notice that the "name" attribute is SAME. If we don't do this, it won't choose only 1 when we toggle b/w the radio buttons.
+notice that when we click on the labels of the radio button, the radio button automatically gets selected. This happens because we set the "id" attribute of <input> tag and "for" attribute of <label> tag properly. 
+
+
+Checkbox - best in cases when we want the user to select multiple options.
+Drop-down list - use <select></select> tag. Within it, we can give many <option></option>
+
+
+There are some more important attributes for <input> tags
+1. required - yeh laga diya to user ko value to enter karna hi padega.
+2. autofocus - automatically focus kar deta hai cursor ko iss particular <input> element pe.
+3. pattern = "" - we can use regular expressions within this.
+
+===========================================
++++++++++++++++++++++++++++++++++++++++++++
+===========================================
 
 
