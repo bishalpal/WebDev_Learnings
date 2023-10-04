@@ -129,4 +129,18 @@ There are some more important attributes for <input> tags
 +++++++++++++++++++++++++++++++++++++++++++
 ===========================================
 
+4 October 2023
+
+Inline elements - jitna jagah chahiye, utna hi space lo. They allow other inline elements to be on the same line as them.
+block elements - takes the entire width of the screen for the element. So, the next element always appears on the next line.
+
+Just look up google to know which are block and which are inline elements.
+
+This is set in CSS using the attribute - "display : inline/block"
+So, we can change an element to be inline or block element.
+
+===========================================
++++++++++++++++++++++++++++++++++++++++++++
+===========================================
+
 
