@@ -143,4 +143,15 @@ So, we can change an element to be inline or block element.
 +++++++++++++++++++++++++++++++++++++++++++
 ===========================================
 
+5 October 2023
+
+id - an attibute to uniquely identify an element. Once 1 element gets a particular id value, there can't be another element with the same id on the same page.
+The id of an element can help with linking. Suppose u want to navigate to a particular section in a long article website. If you know the id of that section, u can directly type into the url's end #id_value.
+It will directly take you to that particular section.
+
+
+class - we can give multiple class values to 1 element. Just separate them by spaces.
+we can give a particular class value to multiple elements.
+the class attribute is used to classify certain elements together. Suppose some of the elements on the page need to be of a particular font, some of them need to be in red color, some of them need be in both - particular font and red color. So, we can have 2 different classes and assign the tags accordingly.
+
 
