@@ -154,4 +154,51 @@ class - we can give multiple class values to 1 element. Just separate them by sp
 we can give a particular class value to multiple elements.
 the class attribute is used to classify certain elements together. Suppose some of the elements on the page need to be of a particular font, some of them need to be in red color, some of them need be in both - particular font and red color. So, we can have 2 different classes and assign the tags accordingly.
 
+===========================================
++++++++++++++++++++++++++++++++++++++++++++
+===========================================
 
+6 October 2023
+
+    MEDIA HTML
+
+<video></video>
+attributes -
+1. src = "<the video address/location>"
+2. controls - all those controls - play button, volume control, seeker etc.
+3. height or width = "<value>"  - no need to say 32px or 54px. Just mention the value.
+4. autoplay - automatically starts playing the video when the page loads.
+5. loop - plays video again once it ends.
+6. muted - mutes the video by default.
+7. poster - specifies the image to be displayed before the video starts playing.
+
+
+<audio></audio>
+Similar to <video> tag. Some of the attributes are similar.
+1. src = "file path"
+2. controls
+3. autoplay
+4. loop
+5. muted
+6. preload = "none/metadata/auto"       // make sure to read about it. 
+
+<svg></svg>                             // Refer here - https://www.codewithharry.com/tutorial/working-with-svg/
+we can create high graphics vector images.
+it is very similar to <img> tag. 
+The svg tag has many attributes. 
+
+Sometimes the svg image are not displayed on the website even if we link them properly using correct src ="" value.
+We need to give a declaration in the opening tag of <svg>. ---- Search it on google ---- 
+
+The <video>, <audio>, <svg> tag are inline tags. 
+
+
+
+<iframe></iframe> -                     // an inline element.
+we can embed another website inside our website.
+Best used to embed youtube videos.
+Go on YT, Click on Share btn - click on the "Embed" option - you will get the link. 
+
+===========================================
++++++++++++++++++++++++++++++++++++++++++++
+===========================================
