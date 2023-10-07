@@ -202,3 +202,18 @@ Go on YT, Click on Share btn - click on the "Embed" option - you will get the li
 ===========================================
 +++++++++++++++++++++++++++++++++++++++++++
 ===========================================
+
+7 October
+
+Semantic tags - 
+tags which tell the developers / web crawlers / search engines - who i am, what I do or what is my purpose.
+these tags help in improving SEO. They help developers in reading and maintaining the code.
+even if we don't use semantic tags, websites still work. But, it is advised to use these. Search engines use them.
+These tags are not used for styling. 
+
+Refer the image at - https://www.codewithharry.com/tutorial/html-semantic-tags/ 
+
+some of them are -
+header
+footer
+nav
