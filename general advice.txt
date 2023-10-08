@@ -209,7 +209,7 @@ Semantic tags -
 tags which tell the developers / web crawlers / search engines - who i am, what I do or what is my purpose.
 these tags help in improving SEO. They help developers in reading and maintaining the code.
 even if we don't use semantic tags, websites still work. But, it is advised to use these. Search engines use them.
-These tags are not used for styling. 
+These tags are not used for styling.  
 
 Refer the image at - https://www.codewithharry.com/tutorial/html-semantic-tags/ 
 
@@ -217,3 +217,43 @@ some of them are -
 header
 footer
 nav
+
+===========================================
++++++++++++++++++++++++++++++++++++++++++++
+===========================================
+
+8 October 2023
+
+HTML Entities               // read at CWH HTML page.
+These enable us to display those symbols or characters which are reserved in HTML or they aren't on the keyboard.
+some of them are -
+&lt;  <
+&gt;  >
+&copy;    copyright symbol
+&nbsp;    blank spaces. Jitna chahiye, utni baar use karo. Well, HTML ignore whitespaces when used in the code.
+
+
+Another fun tag is the <pre></pre>. Hum kuch bhi, kaise bhi likhe na in tags k andar, woh sab kuch waise ka waisa display ho jayega browser mein.
+Meaning, all the new lines, whitespaces, tabs etc will be reflected on the website as well. 
+But, this tag won't help us in displaying the tags. We have to use entities for that.
+
+
+There are quotation tags as well. Just google it.
+
+If we need to display code on the website, we have to use the <code></code> tag.
+Of course, use the HTML entities for those tag symbols. It is advised to use the <code></code> tag inside the <pre></pre> tag.
+<pre>
+    <code>
+        ...all the code you want to display....
+    </code>
+</pre>
+
+
+=============
+SUPER TRICK :
+=============
+Shift + tab     - helps to reduce 1 indent.
+
+======================================================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+======================================================================================
