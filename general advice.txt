@@ -257,3 +257,12 @@ Shift + tab     - helps to reduce 1 indent.
 ======================================================================================
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ======================================================================================
+
+
+                                CSS
+
+HTML ka kaam tha website ka skeleton create karna hai.
+CSS ka kaam hai website ko style dena.
+
+selectors - CSS uses these to target different tags of the HTML.
+There are various ways to use it.
