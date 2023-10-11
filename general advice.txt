@@ -266,3 +266,54 @@ CSS ka kaam hai website ko style dena.
 
 selectors - CSS uses these to target different tags of the HTML.
 There are various ways to use it.
+
+===========================================
++++++++++++++++++++++++++++++++++++++++++++
+===========================================
+
+11 October 2023
+
+Inline CSS - apply the styles directly within the HTML tags.
+for eg -
+<h1 style = "color: red; background-color: yellow;"> I am coloring this text red with yellow background color.</h1>
+We use the style attribute within the opening tag.
+Inside it, we give key:value pairs which are the rules of styles. We sepearate them using ;
+
+This is not considered a good practice. 
+
+Internal CSS - Apply styles within the <style></style> tags which is added in the <head></head> tags.
+Use the selectors and add the style declarations.
+
+eg -
+<head>
+    <style>
+        h1 {
+            color: red;
+            background-color:yellow;
+        }
+
+        .form-content {
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+So, whats the difference b/w inline and internal css ?
+Well, if you have many <h1></h1> tags and you want to give the same styling to all of them,
+if you use inline css, you will grow old and irritated and stop coding. And even if you persevere, in case you need to make changes, you are in for another headache.
+if you use internal css, you will just need to write once and keep your calm.
+
+
+External CSS -
+add all the CSS in another file and just link it in the HTML file. Life becomes easy and your HTML code contains HTML code only. You wont have to worry about the CSS in the .html file. 
+Add your styles in another file with extension .css
+
+Use cases 
+---------
+1. try not to use inline css.
+2. you may use internal css when your webpage is not very big.
+3. when you are working on a production grade website, use External CSS only.
+
+===========================================
++++++++++++++++++++++++++++++++++++++++++++
+===========================================
