@@ -317,3 +317,153 @@ Use cases
 ===========================================
 +++++++++++++++++++++++++++++++++++++++++++
 ===========================================
+
+13 October 2023
+
+Selectors - these are used to target/find the specific HTML elements that we want to style.
+There are different types of CSS selectors. We can use them as per our requirements.
+
+1. Element selector - simply use the opening tag to target that specific HTML element.
+eg: Here "div" is the element selector.
+<style>
+    div {
+        background-color: red;
+    }
+</style>
+
+Drawbacks - all the "div" elements in the HTML file will get targetted.
+
+2. Class selector - use .<class_name> to apply styles.
+eg : Suppose an element has "star" as a class.
+<style>
+    .star {
+        color: red;
+    }
+</style>
+
+Only those tags which have the class "star" will be targetted.
+
+
+3. ID selector - similar to class selector. We use #<id_name>
+
+
+4. Child selectors - if we want to target a child tag of another tag, then use this.
+suppose there is a <p></p> tag inside a <div></div>. We want to target the <p> tag only.
+
+eg :
+div > p {               
+    color: red;
+    background-color:gold;
+}
+
+Ofcourse, this will target all such p tags inside div tag.
+NOTE - the <p> has to be directly inside the <div>. If it is nested in some other tag, this selector wont work.
+
+In case you want any <p></p> tag anywhere inside the <div></div> to be selected, then use descendent selector
+
+
+5. Descendent selector 
+
+eg: div p {
+    color: green;
+}
+matlab, <div> k andar <p> hona chahiye chahe <p> kisi doosre tag k andar kyu na ho.
+even if the <div> itself is somewhere inside another tag, it will work.
+
+
+
+6. Universal selector - 
+* {
+
+}
+
+targets everything.
+
+
+7. Psuedo selectors 
+Suppose I have a link, and after visiting the link, I want the color to change. Psuedo selector helps.
+
+a:visited {
+    color: orange;
+}
+
+Suppose I want any new link's color to be displayed green initially.
+a:link {
+    color: green;
+}
+
+
+The moment we are clicking on a link is the time when a link is active.
+Suppose I want the background color to be red when the link is active. So, I can use
+a:active {
+    background-color: red;
+}
+
+
+On Hover
+a:hover {
+    background-color: yellow;
+}
+
+
+Now, a tricky one.     // Not used a lot. Only the above mentioned selectors are used in 95% of the cases.
+Suppose there are <p></p> tags at many places in an HTML document, 
+and you have bizzarre ideas and want to change the background-color of only those <p></p> tags who are the first child of their parent.
+p:first-child {
+    background-color: blue;
+}
+
+===========================================
++++++++++++++++++++++++++++++++++++++++++++
+===========================================
+
+19 October 2023
+
+CSS Box Model - Margin, Padding, Boders
+
+CSS k andar, har content ek BOX hota hai.
+And har ek box ke around kuch aur cheeje hote hai - padding, border, margin.
+
+    Margin
+        border
+            padding
+                CONTENT
+            padding
+        border
+    margin
+
+Now, the TOTAL WIDTH of our content comes out to be the sum of the 
+width of [ content + left padding + right padding + left border + right border + left margin + right margin]
+Same goes for TOTAL HEIGHT except for the margin. Just consider top and bottom values.
+
+NOTE : The background-color that we provide to our content will also be present within the padding.
+
+When we give width or height to a specific element, that value is applied ONLY to the content.
+It is not the TOTAL WIDTH/HEIGHT.
+
+To make the TOTAL WIDTH/HEIGHT be = the height/width we mention for that particular element, we have add this -
+
+div {               // let's say we are targetting a div tag.
+    margin : 5px;
+    padding: 10px;
+    border: 2 px solid green;
+    background-color: yellow;
+    height: 200px;
+    width: 300px;
+    box-sizing: border-box;             <----- this is the declaration.
+}
+
+The box-sizing: border-box;     this includes our [ content + padding + border].
+It does not include the margin.
+This changes the definition of height property.
+
+
+
+MARGIN COLLAPSE
+It states that if margin of 2 elements are overlapping then, whichever element has greater margin value will be considered. 
+So, the maximum margin will be applied ONLY ONCE. The smaller value margin will be ignored.
+
+
+===========================================
++++++++++++++++++++++++++++++++++++++++++++
+===========================================
