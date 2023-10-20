@@ -467,3 +467,45 @@ So, the maximum margin will be applied ONLY ONCE. The smaller value margin will 
 ===========================================
 +++++++++++++++++++++++++++++++++++++++++++
 ===========================================
+
+20 October 2023
+
+FONTS
+------
+
+To change font of any text use
+p {
+    font-family : Arial, Tahoma, Verdana;
+}
+
+if Arial is not available then Tahoma will be used. If Tahoma isn't present then Verdana will be used.
+
+Always put 1 font-family that is available in everyone's machine like - Times New Roman, Arial etc. 
+This will help in cases the 1st font isn't available on the user's computer.
+
+There are many other properties for fonts.
+font-size, font-weight, font-style etc.
+text-decoration : underline;
+
+Use GOOGLE FONTS for different font families.
+Always select all the fonts that u want first and then copy the "import" statement content from Google Fonts.
+This will help in bringing all the fonts in 1 request.
+
+
+TEXT DECORATION 
+-----------------
+
+text-transform:  <values>               <----- this is one is really good. Comes in use a lot.
+text-decoration: 
+text-decoration-color: 
+text-decoration-style: 
+text-decoration-thickness:          // this one helps to increase the thickness of the underline set using text-decoration-style.
+
+text-align: center;                                 <-- highly used.
+
+line-height - the gap between the lines.            <---- pretty useful.
+letter-spacing
+
+
+
+There are many more properties. Just google for them when you meet a requirement.
