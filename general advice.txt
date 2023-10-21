@@ -509,3 +509,40 @@ letter-spacing
 
 
 There are many more properties. Just google for them when you meet a requirement.
+
+===========================================
++++++++++++++++++++++++++++++++++++++++++++
+===========================================
+
+
+21 October 2023
+
+CSS Specificity and Cascading
+------------------------------
+
+Suppose we apply different styles using different selectors but all of them are targetting the same element.
+At that time, CSS uses it's own Cascade algorithm to apply the styles. 
+it determines which style to apply among all the different styles.
+The Cascade algorithm has 4 different stages -
+1. Position and order of appearance - if selector is of same type, then, the last one is considered for styling.
+2. Specificity - when type of selector changes, then Specificity is considered. 
+                 the order of Specificity is as follows :
+                 inline styles > ID selector > class or attribute selector > Element selector > Universal selector.
+
+Always try to use the least specific selector whenever possible. 
+This will help you to change styles later on by using a higher specificity selecotr.
+
+3. Origin : the order in which CSS appears and where it comes from. More preference is given to user authored styles.
+eg : user agent stylesheet : aka BROWSER.
+
+4. Important - This one is the most powerful. If you write " !important " after any style declaration, it will overwrite all other styles (even the inline styles).
+
+
+NOTE - We can calculate specificity. There are points given to different type of selectors.
+Refer at - https://www.codewithharry.com/tutorial/css-specificity/ 
+
+To calculate specificity of complex selectors, watch at 14:05 https://www.youtube.com/watch?v=uTcpbPMZlFE 
+
+===========================================
++++++++++++++++++++++++++++++++++++++++++++
+===========================================
