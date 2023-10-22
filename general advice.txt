@@ -554,7 +554,7 @@ To calculate specificity of complex selectors, watch at 14:05 https://www.youtub
 CSS Sizing units - px, rem, em, vh, vw, % and more
 --------------------------------------------------
 
-See there are many types of measurement units. 
+See, there are many types of measurement units. 
 When to use what - it depends on what you are doing.
 
 px - pixels. Use this when you want exactly <value> dimension. This hardcodes the dimension values for all monitors and use cases.
@@ -631,6 +631,39 @@ It means 50% of it's parents width.
 But for this, the width of the parent MUST be set.
 
 Always try to stick with vh and vw. Don't go into percentages often. Only use them if u know what u are doing.
+
+===========================================
++++++++++++++++++++++++++++++++++++++++++++
+===========================================
+
+
+22 October 2023
+
+Display property
+----------------
+
+The display property can help in making certain block level / inline element behave in many different ways.
+
+inline elements -
+- occupy as much space as required by it's content.
+- does not have any concept of "width" setting.
+- does not follow "padding" for the "top" side. Works for the rest of the sides.
+- does not follow "margin" for the "top" side. Works for the rest of the sides.
+
+
+display : inline-block;
+- follows margin, padding and width properly.
+
+
+display: none;
+- makes the element disappear. 
+- The space for that particulr element goes away as well.
+
+< ----------- Now here is the challenger of display:none  ----------- >
+
+visibility: none;
+- makes the element disapper.
+- The space for that element remains.
 
 ===========================================
 +++++++++++++++++++++++++++++++++++++++++++
