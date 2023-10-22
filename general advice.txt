@@ -546,3 +546,92 @@ To calculate specificity of complex selectors, watch at 14:05 https://www.youtub
 ===========================================
 +++++++++++++++++++++++++++++++++++++++++++
 ===========================================
+
+
+22 October 2023
+
+
+CSS Sizing units - px, rem, em, vh, vw, % and more
+--------------------------------------------------
+
+See there are many types of measurement units. 
+When to use what - it depends on what you are doing.
+
+px - pixels. Use this when you want exactly <value> dimension. This hardcodes the dimension values for all monitors and use cases.
+
+vw - viewport width - 
+viewport matlab tumhare screen ka width (jisme tum dekh rahe ho). 
+So it means that this value will change as per the width of different screens.
+So, it is RESPONSIVE.
+
+
+<------>
+
+Sabse aasan tareeka koi bhi <div> element ko agar center karna ho, then
+1. give it some width
+2. apply margin:auto style rule.
+
+Done!
+(   This happens because div is a block level element. Inline hota to kaam nahi karta   )
+<------>
+
+
+vh - viewport height
+similar to vw but in respect to the height.
+
+em -
+Suppose nested elements hai. I applied a particular font-size to the parent tag.
+so....obviously the child elements will inherit that font-size.
+But now, if I use the following style to 
+font-size: <some_value> em 
+then, it will multiply the parents's font-size by "some_value" and set that value equal to font-size of child.
+
+parent ka <value> times.
+
+
+
+rem - 
+root element ka size * (the value u enter in "rem")
+generally, the root element is <html>
+
+root ka <value> times.
+
+
+                    < ---------- The above units are mostly used ---------- >
+
+Some more units 
+---------------
+
+vmin, vmax 
+monitors have width > height
+mobiles have height > width.
+
+So, for monitors, vmin = height.
+for mobiles, vmin = width.
+So, vmin = screen/viewport ka smaller dimension.
+
+vmax - screen/viewport ka larger dimension.
+
+------------------------------------------------
+
+Suppose I want the body of the website to occupy a "minimum" height all the time. Of course, if the content increases, it can occupy more space.
+ 
+div {
+    min-height: 80vh;
+}
+
+Now, the minimum height for the div element is fixed to 80vh. It will occupy 80vh even if it doesn't have any content within. If the content increases, it will occupy more space. The container will adjust it's height.
+
+--------------------------------------------------
+
+Percentage width/height 
+When we use this
+width : 50%
+It means 50% of it's parents width.
+But for this, the width of the parent MUST be set.
+
+Always try to stick with vh and vw. Don't go into percentages often. Only use them if u know what u are doing.
+
+===========================================
++++++++++++++++++++++++++++++++++++++++++++
+===========================================
