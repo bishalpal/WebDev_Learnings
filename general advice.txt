@@ -668,3 +668,46 @@ visibility: none;
 ===========================================
 +++++++++++++++++++++++++++++++++++++++++++
 ===========================================
+
+23 October 2023
+
+CSS Shadows and Outlines
+------------------------
+
+We can give shadows to any element using CSS.
+
+Box-shadow
+----------
+syntax is :
+box-shadow: h-offset v-offset blur spread color inset;
+
+the first 2 determine the horizontal and vertical position of shadow.
+blur - the larger the value, the blurrier the shadow.
+spread - expands or shrinks the shadow size.
+color - defines shadow color.
+inset - makes the shadow inner. 
+
+// Use the INSPECT tool of browser. It will give a very good GUI to write the box-shadow details.
+
+
+
+Text-shadow 
+------------
+
+property -      text-shadow: 
+
+
+Outlines
+-----------
+syntax : outline: width style color;
+pretty similar to the way we write style for border: 2px solid blue;
+
+
+border is inside. Outline is outside.
+Outline doesn't take space. It is not part of the box-model.
+
+outline-offset:
+
+===========================================
++++++++++++++++++++++++++++++++++++++++++++
+===========================================
